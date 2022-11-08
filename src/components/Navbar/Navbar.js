@@ -3,7 +3,7 @@ import mainLogo from "../img/main-logo-notitle.png";
 import mainSocialLogo from "../img/main-social-logo.png"
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 const navigation = [
   { name: 'Projects', href: '#', current: true },
@@ -87,7 +87,7 @@ const Navbar = () => {
                       <Menu.Item>
                         {({ active }) => (
                           <a
-                            href="#"
+                            href="https://github.com/DanioFiore" target="_blank" rel="noreferrer"
                             className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
                             GitHub
@@ -97,20 +97,10 @@ const Navbar = () => {
                       <Menu.Item>
                         {({ active }) => (
                           <a
-                            href="#"
+                            href="https://www.linkedin.com/in/danio-fiore/" target="_blank" rel="noreferrer"
                             className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                           >
                             LinkedIn
-                          </a>
-                        )}
-                      </Menu.Item>
-                      <Menu.Item>
-                        {({ active }) => (
-                          <a
-                            href="#"
-                            className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
-                          >
-                            Instagram
                           </a>
                         )}
                       </Menu.Item>
