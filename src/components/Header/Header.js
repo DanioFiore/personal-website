@@ -1,12 +1,16 @@
 import React from "react";
+import myPicture from "../img/foto.jpeg";
 
-const Header = (props) => {
+const Header = () => {
   return (
     <React.Fragment>
-      <div className="grid gap-2 grid-cols-2">
+      <div className="grid grid-cols-3">
         <div className="flex flex-col">
-          <h1 className="text-7xl self-start">Danio Fiore</h1>
-          <h5>Jr. Web Developer</h5>
+          <h1 className="text-6xl self-start">Danio Fiore</h1>
+          <p className="self-end">Jr. Web Developer</p>
+        </div>
+        <div className="flex justify-center border-x mx-10">
+          <img src={myPicture} className="h-80 rounded-full" alt="this is me"/>
         </div>
         <div className="">
           <h1 className="text-6xl">Who I am</h1>
