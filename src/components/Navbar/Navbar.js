@@ -1,10 +1,11 @@
 import React from "react";
 import mainLogo from "../img/main-logo-notitle.png";
-import mainSocialLogo from "../img/main-social-logo.png"
+import mainSocialLogo from "../img/ld-gt.png"
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
+// links object
 const navigation = [
   { name: 'Projects', href: '#', current: true },
   { name: 'My Story', href: '#', current: false },
@@ -23,6 +24,7 @@ const Navbar = () => {
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+
                 {/* Mobile menu button*/}
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-secondary-dark hover:bg-gray-700 hover:text-secondary focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="sr-only">Open main menu</span>
@@ -33,19 +35,20 @@ const Navbar = () => {
                   )}
                 </Disclosure.Button>
               </div>
+
+              {/* navbar left content */}
               <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+
+                {/* main logo */}
                 <div className="flex flex-shrink-0 items-center">
                   <img
-                    className="block h-10 w-auto lg:hidden"
-                    src={mainLogo}
-                    alt="Your Company"
-                  />
-                  <img
-                    className="hidden h-10 w-auto lg:block"
+                    className="h-10 w-auto"
                     src={mainLogo}
                     alt="Your Company"
                   />
                 </div>
+
+                {/* left links */}
                 <div className="hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
                     {navigation.map((item) => (
@@ -66,14 +69,20 @@ const Navbar = () => {
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
 
-                {/* Profile dropdown */}
+                {/* navbar right content */}
                 <Menu as="div" className="relative ml-3">
                   <div>
+
+                    {/* socials button */}
                     <Menu.Button className="flex rounded-full bg-primary-light text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                       <span className="sr-only">Open user menu</span>
+
+                      {/* socials logo */}
                       <img className="h-10 w-10 rounded-full" src={mainSocialLogo} alt="social media logos" />
                     </Menu.Button>
                   </div>
+
+                  {/* open socials dropdown transition */}
                   <Transition
                     as={Fragment}
                     enter="transition ease-out duration-100"
@@ -86,6 +95,8 @@ const Navbar = () => {
                     <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                       <Menu.Item>
                         {({ active }) => (
+
+                          // github link
                           <a
                             href="https://github.com/DanioFiore" target="_blank" rel="noreferrer"
                             className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
@@ -96,6 +107,8 @@ const Navbar = () => {
                       </Menu.Item>
                       <Menu.Item>
                         {({ active }) => (
+
+                          // linkedin link
                           <a
                             href="https://www.linkedin.com/in/danio-fiore/" target="_blank" rel="noreferrer"
                             className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
@@ -111,6 +124,7 @@ const Navbar = () => {
             </div>
           </div>
 
+          {/* hiding right navbar's content */}
           <Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-2 pt-2 pb-3">
               {navigation.map((item) => (
