@@ -1,123 +1,71 @@
 import React from "react";
+import SkillsBar from "./SkillsBar";
 
 const Skills = () => {
-  return (
-    <React.Fragment>
+  // array of skills
+  let skills = [
+    {
+      language: "HTML",
+      width: "80%",
+    },
+    {
+      language: "CSS",
+      width: "80%",
+    },
+    {
+      language: "Javascript",
+      width: "70%",
+    },
+    {
+      language: "React",
+      width: "40%",
+    },
+    {
+      language: "Bootstrap",
+      width: "90%",
+    },
+    {
+      language: "Tailwind CSS",
+      width: "35%",
+    },
+    {
+      language: "Java Base",
+      width: "50%",
+    },
+    {
+      language: "PHP",
+      width: "60%",
+    },
+    {
+      language: "Laravel",
+      width: "65%",
+    },
+    {
+      language: "MySQL",
+      width: "55%",
+    },
+  ];
 
+  return (
+    <div>
       {/* title */}
-      <div className="mt-10">
-        <h1 className="text-7xl">My Tech Skills</h1>
+      <div className="mt-10 flex justify-center">
+        <h1 className="text-5xl mb-6">My Tech Skills</h1>
       </div>
 
       {/* skills container */}
-      <div>
-        <ul>
-
-          {/* html */}
-          <li>
-            <h6>HTML</h6>
-            <div className="shadow w-full bg-grey-light">
-              <div
-                className="bg-primary-light leading-none py-3 rounded-lg"
-                style={{ width: "80%" }}
-              ></div>
-            </div>
-          </li>
-
-          {/* css */}
-          <li>
-            <h6>CSS</h6>
-            <div className="shadow w-full bg-grey-light">
-              <div
-                className="bg-primary-light leading-none py-3 rounded-lg"
-                style={{ width: "80%" }}
-              ></div>
-            </div>
-          </li>
-
-          {/* javascript */}
-          <li>
-            <h6>JavaScript</h6>
-            <div className="shadow w-full bg-grey-light">
-              <div
-                className="bg-primary-light leading-none py-3 rounded-lg"
-                style={{ width: "70%" }}
-              ></div>
-            </div>
-          </li>
-
-          {/* bootstrap */}
-          <li>
-            <h6>Bootstrap</h6>
-            <div className="shadow w-full bg-grey-light">
-              <div
-                className="bg-primary-light leading-none py-3 rounded-lg"
-                style={{ width: "90%" }}
-              ></div>
-            </div>
-          </li>
-
-          {/* php */}
-          <li>
-            <h6>PHP</h6>
-            <div className="shadow w-full bg-grey-light">
-              <div
-                className="bg-primary-light leading-none py-3 rounded-lg"
-                style={{ width: "65%" }}
-              ></div>
-            </div>
-          </li>
-
-          {/* laravel */}
-          <li>
-            <h6>Laravel</h6>
-            <div className="shadow w-full bg-grey-light">
-              <div
-                className="bg-primary-light leading-none py-3 rounded-lg"
-                style={{ width: "65%" }}
-              ></div>
-            </div>
-          </li>
-
-          {/* mysql */}
-          <li>
-            <h6>MySQL</h6>
-            <div className="shadow w-full bg-grey-light">
-              <div
-                className="bg-primary-light leading-none py-3 rounded-lg"
-                style={{ width: "55%" }}
-              ></div>
-            </div>
-          </li>
-
-          {/* react */}
-          <li>
-            <h6>React</h6>
-            <div className="shadow w-full bg-grey-light">
-              <div
-                className="bg-slate-400 text-center text-white leading-none py-1 rounded-lg"
-                style={{ width: "100%" }}
-              >
-                In progress..
-              </div>
-            </div>
-          </li>
-
-          {/* java */}
-          <li>
-            <h6>Java</h6>
-            <div className="shadow w-full bg-grey-light">
-              <div
-                className="bg-slate-400 text-center text-white leading-none py-1 rounded-lg"
-                style={{ width: "100%" }}
-              >
-                In progress..
-              </div>
-            </div>
-          </li>
-        </ul>
+      <div className="flex justify-center">
+        <div className="w-6/12">
+          <ul>
+            {skills.map((element) => (
+              <li>
+                <SkillsBar language={element.language} width={element.width} />
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-    </React.Fragment>
+    </div>
   );
 };
 
