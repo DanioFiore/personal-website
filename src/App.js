@@ -5,6 +5,7 @@ import Skills from "./components/Skills/Skills";
 import ThisWebsite from "./components/ThisWebsite/ThisWebsite";
 import ReachMe from "./components/ReachMe/ReachMe";
 import Footer from "./components/Footer/Footer";
+import MiddleSection from "./components/MiddleSection/MiddleSection";
 
 function App() {
   return (
@@ -12,8 +13,7 @@ function App() {
       <Navbar />
       <div className="p-10 mt-10">
         <Header />
-        <Skills />
-        <ThisWebsite />
+        <MiddleSection />
         <ReachMe />
         <Footer />
       </div>
