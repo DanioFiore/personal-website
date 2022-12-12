@@ -64,9 +64,9 @@ const Skills = () => {
       </div>
 
       {/* skills container */}
-      <div className="flex justify-center">
-        <div className="w-6/12">
-          <ul>
+      <div className="">
+        <div className="">
+          <ul className="grid md:grid-cols-2 sm:grid-cols-1 gap-x-20">
             {skills.map((element) => (
               <li key={element.id}>
                 <SkillsBar language={element.language} width={element.width} />

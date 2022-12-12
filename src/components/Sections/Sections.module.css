@@ -1,34 +1,22 @@
 .myBestProjects {
     background-image: url("../img/code-image.webp");
+    border-radius: 10px;
     height: 200px;
     width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    margin: 10px 0;
-    border-radius: 10px;
 }
 
 .myBlog {
     background-image: url("../img/typing.webp");
+    border-radius: 10px;
     height: 200px;
     width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-position: center;
-    margin: 10px 0;
-    border-radius: 10px;
 }
 
 .myStory {
     background-image: url("../img/story2.jpg");
+    border-radius: 10px;
     height: 200px;
     width: 300px;
-    background-position: center;
-    margin: 10px 0;
-    border-radius: 10px;
 }
 
 .filter {
@@ -40,3 +28,4 @@
     justify-content: center;
     align-items: center;
 }
+

@@ -1,7 +1,7 @@
 import React from "react";
 import mainLogo from "../img/main-logo-notitle.png";
 
-const Footer = (props) => {
+const Footer = () => {
     return (
         <footer className="bg-primary-light p-10 flex flex-col items-center">
             <h6 className="text-secondary">
