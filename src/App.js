@@ -1,7 +1,6 @@
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Header from "./components/Header/Header";
-import ReachMe from "./components/ReachMe/ReachMe";
 import Footer from "./components/Footer/Footer";
 import MiddleSection from "./components/MiddleSection/MiddleSection";
 
@@ -12,9 +11,8 @@ function App() {
       <div className="p-10 mt-10">
         <Header />
         <MiddleSection />
-        <ReachMe />
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }

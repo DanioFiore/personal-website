@@ -60,7 +60,7 @@ const Skills = () => {
     <div>
       {/* title */}
       <div className="mt-10 flex justify-center">
-        <h1 className="text-5xl mb-6">My Tech Skills</h1>
+        <h2 className="text-5xl mb-6">Tech Skills</h2>
       </div>
 
       {/* skills container */}

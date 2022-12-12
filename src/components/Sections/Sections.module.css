@@ -1,7 +1,7 @@
 .myBestProjects {
     background-image: url("../img/code-image.webp");
-    height: 150px;
-    width: 250px;
+    height: 200px;
+    width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,8 +12,8 @@
 
 .myBlog {
     background-image: url("../img/typing.webp");
-    height: 150px;
-    width: 250px;
+    height: 200px;
+    width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,8 +24,8 @@
 
 .myStory {
     background-image: url("../img/story2.jpg");
-    height: 150px;
-    width: 250px;
+    height: 200px;
+    width: 300px;
     background-position: center;
     margin: 10px 0;
     border-radius: 10px;
@@ -33,8 +33,8 @@
 
 .filter {
     background-color: rgba(0, 0, 0, 0.3);
-    height: 150px;
-    width: 250px;
+    height: 200px;
+    width: 300px;
     border-radius: 10px;
     display: flex;
     justify-content: center;
