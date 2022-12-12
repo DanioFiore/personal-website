@@ -1,15 +1,27 @@
 import React from "react";
-import codeImage from "../img/code-image.webp";
-import typingImage from "../img/typing.webp";
+import style from "./ThisWebsite.module.css";
 
 const ThisWebsite = () => {
     return (
         <div className="mt-10">
             <h2 className="text-5xl">What can you find?</h2>
             <ul className="flex flex-col items-center">
-                <a href="#"><img src={codeImage} alt="coding" /> My Best Projects</a>
-                <li>My Stories</li>
-                <a href="#"><img src={typingImage} alt="typing on macbook"/> Blog</a>
+                <div className={style.myBestProjects}>
+                    <div className={style.filter}>
+                        <a href="#" className="text-white"> My Best Projects</a>
+                    </div>
+                </div>
+                <div className={style.myStory}>
+                    <div className={style.filter}>
+                        <a href="#" className="text-white">My Story</a>
+                    </div>
+                </div>
+                <div className={style.myBlog}>
+                    <div className={style.filter}>
+                        <a href="#" className="text-white">Blog</a>
+                    </div>
+                </div>
+                
             </ul>
         </div>
     );
