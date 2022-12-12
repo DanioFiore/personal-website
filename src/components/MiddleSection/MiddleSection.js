@@ -1,11 +1,11 @@
 import Skills from "../Skills/Skills"
-import ThisWebsite from "../ThisWebsite/ThisWebsite";
+import Sections from "../Sections/Sections";
 
 const MiddleSection = () => {
     return(
-        <div className="flex justify-around">
+        <div className="grid xl:grid-cols-2 sm:grid-cols-1 gap-x-20">
             <Skills />
-            <ThisWebsite />
+            <Sections />
         </div>
     );
 }

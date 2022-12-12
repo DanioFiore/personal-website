@@ -1,14 +1,14 @@
 import React from "react";
 import style from "./ThisWebsite.module.css";
 
-const ThisWebsite = () => {
+const Sections = () => {
     return (
         <div className="mt-10">
-            <h2 className="text-5xl">What can you find?</h2>
+            <h2 className="text-5xl">Sections</h2>
             <ul className="flex flex-col items-center">
                 <div className={style.myBestProjects}>
                     <div className={style.filter}>
-                        <a href="#" className="text-white"> My Best Projects</a>
+                        <a href="#" className="text-white">My Best Projects</a>
                     </div>
                 </div>
                 <div className={style.myStory}>
@@ -27,4 +27,4 @@ const ThisWebsite = () => {
     );
 }
 
-export default ThisWebsite;
+export default Sections;
